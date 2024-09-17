@@ -7,8 +7,9 @@
 :root {
     --cor-primaria: #FFEAC5;
     --cor-secundario: #FFDBB5;
-    --cor-terciaria: #6C4E31;
+    --cor-terciaria: #000000;
     --cor-titulo: #603F26;
+    --cor-rodape: #6C4E31;
 
     --fonte-primaria: "Krona One", sans-serif;
     --font-secundaria: 'Montserrat', 'sans_serif';
@@ -52,10 +53,16 @@ body {
 }
 
 .img__apresentacao {    
-    width: 600px;
+    width: 650px;
+    position: absolute;
+    top: 200px;
+    left: 1000px;
     display: flex; 
     justify-content: space-between;
-    
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+        
   
 }
 
@@ -123,6 +130,13 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
 }
+
+.img__botao{
+    width: 40px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
 .apresentacao__links__link:hover {
     background-color: var(--cor-terciaria);
 }
@@ -130,11 +144,11 @@ body {
 .rodape{
     padding: 24px;
     color: var(--cor-primaria);
-    background-color:var(--cor-terciaria
+    background-color:var(--cor-rodape
     );
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     position: fixed;
     bottom: 0;
