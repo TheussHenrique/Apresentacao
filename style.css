@@ -10,6 +10,8 @@
     --cor-terciaria: #000000;
     --cor-titulo: #603F26;
     --cor-rodape: #6C4E31;
+    --cor-botao: #ffffff ;
+    --cor-link: #808080;
 
     --fonte-primaria: "Krona One", sans-serif;
     --font-secundaria: 'Montserrat', 'sans_serif';
@@ -89,10 +91,22 @@ body {
  }
 
 .apresentacao__conteudo__texto {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "SUSE", sans-serif;
     text-decoration: none;
     color: var(--cor-terciaria)
+}
+
+.apresentacao__conteudo__curriculo{   
+    font-size: 1.5rem;
+    font-family: "SUSE", sans-serif;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+
+}
+
+.apresentacao__conteudo__curriculo:hover{
+    color: var(--cor-link);
 }
 
 .link__alura{
@@ -111,7 +125,7 @@ body {
 .apresetacao_links_subtitulo{
     font-family: 'Krona one', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .apresentacao__links__link {
@@ -123,7 +137,7 @@ body {
     width: 378px;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 21.5px 0;
     text-decoration: none;
     color: var(--cor-terciaria);
@@ -135,10 +149,10 @@ body {
     width: 40px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    filter: gray;
+    filter: rgb(255, 255, 255);
 }
 .apresentacao__links__link:hover {
-    background-color: var(--cor-terciaria);
+    background-color: var(--cor-botao);
 }
 
 .rodape{
@@ -148,7 +162,7 @@ body {
     );
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     position: fixed;
     bottom: 0;
